@@ -1,11 +1,13 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router";
+import "./main.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Login from "./pages/user/Login.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    // element: <Login />,
+    path: "/login",
+    element: <Login />,
   },
 ]);
 
