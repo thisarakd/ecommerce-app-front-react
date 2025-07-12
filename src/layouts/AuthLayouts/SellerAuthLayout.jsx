@@ -1,9 +1,14 @@
 import React from 'react';
+import SellerHeader from "../../components/seller/SellerHeader.jsx";
+
 
 const SellerAuthLayout = ({ children }) => {
     return (
-        <div className="min-h-screen flex items-center justify-center bg-white px-4">
-            <div className="w-full max-w-md">{children}</div>
+        <div className="flex flex-col min-h-screen">
+            <SellerHeader />
+            <main className="bg-gray-100 flex-grow flex items-center justify-center">
+                <div className="w-full">{children}</div>
+            </main>
         </div>
     );
 };

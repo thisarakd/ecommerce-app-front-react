@@ -5,6 +5,8 @@ const SellerButton = ({ to, icon: IconName, className="", children }) => {
   return (
     <Link
       to={to}
+      target="_blank"
+      rel="noopener"
       className={`items-center space-x-2 px-4 py-2
   bg-gradient-to-r from-orange-400 to-orange-600 text-white rounded-md
   hover:from-orange-500 hover:to-orange-700 transition-all shadow-md hover:shadow-lg ${className}`}>
